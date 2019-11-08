@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import PeopleList from './components/PeopleList';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -10,9 +11,14 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
+    <div className='App'>
+      <h1 className='Header'>React Wars</h1>
+      <div style={{
+        width: '100vw', height: '10%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'
+      }} className='container'>
+        <PeopleList />
+      </div>
+    </div >
   );
 }
 
